@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ip7-c5-C0Z">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vocabulary-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VocabularyVC" customModule="EnglishPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0DN-CZ-wgD">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="HoJ-yj-6It">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b2-6L-AbV">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="A">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWC-mA-OVT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8j-9Q-9Gv">
+                                                <rect key="frame" x="103.66666666666669" y="0.0" width="103" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="B">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mKr-Df-4th"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abB-YD-4QV">
+                                                <rect key="frame" x="207.66666666666666" y="0.0" width="102.66666666666666" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRf-Ej-28y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9q-aB-dwU">
+                                                <rect key="frame" x="311.33333333333331" y="0.0" width="102.66666666666669" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="D">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEh-VD-6gP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z4U-lz-SaY">
+                                        <rect key="frame" x="0.0" y="89" width="414" height="88.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp9-DZ-1aY">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="E">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x97-56-iBG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pz-bv-r8f">
+                                                <rect key="frame" x="103.66666666666669" y="0.0" width="103" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="F">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IFD-6B-TWL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZE-7H-bt7">
+                                                <rect key="frame" x="207.66666666666666" y="0.0" width="102.66666666666666" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="G">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K2r-Ma-AHM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="7" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQc-ii-rwD">
+                                                <rect key="frame" x="311.33333333333331" y="0.0" width="102.66666666666669" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="H">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fp8-bV-wu2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ihl-rU-8co">
+                                        <rect key="frame" x="0.0" y="178.33333333333334" width="414" height="88.000000000000028"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="8" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhX-pP-bxo">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="I">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7J-ex-jp2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="9" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ii1-9E-y1E">
+                                                <rect key="frame" x="103.66666666666669" y="0.0" width="103" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="J">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdY-29-pf4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="10" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PW0-hU-rnK">
+                                                <rect key="frame" x="207.66666666666666" y="0.0" width="102.66666666666666" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="K">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Faj-wZ-A7L"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="11" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-Pm-MMk">
+                                                <rect key="frame" x="311.33333333333331" y="0.0" width="102.66666666666669" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="L">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vot-9c-TpF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="LiQ-jL-QkF">
+                                        <rect key="frame" x="0.0" y="267.33333333333331" width="414" height="88.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="12" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHH-ED-aMH">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="M">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lc-Ez-JQL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="13" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSI-sw-z7n">
+                                                <rect key="frame" x="103.66666666666669" y="0.0" width="103" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="N">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7TM-Qz-eh1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="14" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psc-ZO-F3Q">
+                                                <rect key="frame" x="207.66666666666666" y="0.0" width="102.66666666666666" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="O">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HXK-l1-edD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="15" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwq-o4-Bmo">
+                                                <rect key="frame" x="311.33333333333331" y="0.0" width="102.66666666666669" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="P">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zTh-fy-cYD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="nAc-Wr-2hh">
+                                        <rect key="frame" x="0.0" y="356.66666666666669" width="414" height="88"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="16" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7P-ww-edC">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="Q">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MLE-SG-fYl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="17" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEx-hR-ZYf">
+                                                <rect key="frame" x="103.66666666666669" y="0.0" width="103" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="R">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1bB-q0-CUd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="18" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55J-EM-ZRw">
+                                                <rect key="frame" x="207.66666666666666" y="0.0" width="102.66666666666666" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="S">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ina-hk-W9v"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="19" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smH-pr-wVf">
+                                                <rect key="frame" x="311.33333333333331" y="0.0" width="102.66666666666669" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="T">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMg-nM-r8m"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="832-V6-GfY">
+                                        <rect key="frame" x="0.0" y="445.66666666666669" width="414" height="88.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="20" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrI-rd-S2P">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="U">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FDP-53-vIF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="21" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or9-ET-JIZ">
+                                                <rect key="frame" x="103.66666666666669" y="0.0" width="103" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="V">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnV-PW-jix"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="22" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7n2-SC-1fl">
+                                                <rect key="frame" x="207.66666666666666" y="0.0" width="102.66666666666666" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="W">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BhO-hU-wgr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="23" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouO-c9-9YR">
+                                                <rect key="frame" x="311.33333333333331" y="0.0" width="102.66666666666669" height="88.333333333333329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="X">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4TG-dz-OYZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-HH-nUr">
+                                        <rect key="frame" x="0.0" y="535" width="414" height="88"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="24" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-at-VR5">
+                                                <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="Y">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VUR-Be-Rak"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="25" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90g-aL-1GF">
+                                                <rect key="frame" x="103.66666666666669" y="0.0" width="103" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="Z">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sn6-NF-4ME"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYo-v7-MHF">
+                                                <rect key="frame" x="207.66666666666666" y="0.0" width="102.66666666666666" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="testButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T1o-ZM-HeC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfX-sx-d3z">
+                                                <rect key="frame" x="311.33333333333331" y="0.0" width="102.66666666666669" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="testButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6A0-Vq-D8Z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ihl-rU-8co" secondAttribute="trailing" id="1kS-Ca-kxS"/>
+                                    <constraint firstItem="832-V6-GfY" firstAttribute="leading" secondItem="0DN-CZ-wgD" secondAttribute="leading" id="BFK-gg-UWu"/>
+                                    <constraint firstItem="nAc-Wr-2hh" firstAttribute="leading" secondItem="0DN-CZ-wgD" secondAttribute="leading" id="Bmb-Da-2qm"/>
+                                    <constraint firstAttribute="trailing" secondItem="LiQ-jL-QkF" secondAttribute="trailing" id="NNn-TA-T92"/>
+                                    <constraint firstAttribute="trailing" secondItem="FAN-HH-nUr" secondAttribute="trailing" id="UXS-H9-Yos"/>
+                                    <constraint firstItem="HoJ-yj-6It" firstAttribute="leading" secondItem="0DN-CZ-wgD" secondAttribute="leading" id="a4R-FY-1qQ"/>
+                                    <constraint firstItem="Z4U-lz-SaY" firstAttribute="leading" secondItem="0DN-CZ-wgD" secondAttribute="leading" id="bFW-Iz-2X4"/>
+                                    <constraint firstItem="LiQ-jL-QkF" firstAttribute="leading" secondItem="0DN-CZ-wgD" secondAttribute="leading" id="cDD-Fh-oMX"/>
+                                    <constraint firstItem="ihl-rU-8co" firstAttribute="leading" secondItem="0DN-CZ-wgD" secondAttribute="leading" id="cUB-cp-WZT"/>
+                                    <constraint firstAttribute="trailing" secondItem="832-V6-GfY" secondAttribute="trailing" id="f0I-It-UjB"/>
+                                    <constraint firstAttribute="trailing" secondItem="HoJ-yj-6It" secondAttribute="trailing" id="n0R-mi-T3N"/>
+                                    <constraint firstItem="FAN-HH-nUr" firstAttribute="leading" secondItem="0DN-CZ-wgD" secondAttribute="leading" id="n1n-nj-cKO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z4U-lz-SaY" secondAttribute="trailing" id="sIB-Wq-AQn"/>
+                                    <constraint firstAttribute="trailing" secondItem="nAc-Wr-2hh" secondAttribute="trailing" id="xEq-Ds-8yA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0DN-CZ-wgD" secondAttribute="bottom" id="Cxu-YT-1n8"/>
+                            <constraint firstItem="0DN-CZ-wgD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E6a-Fh-8i2"/>
+                            <constraint firstItem="0DN-CZ-wgD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eTd-1f-XJQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0DN-CZ-wgD" secondAttribute="trailing" id="y4G-BD-FcS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vocabulary" id="Uxg-p7-tiI"/>
+                    <connections>
+                        <outletCollection property="charArray" destination="1b2-6L-AbV" collectionClass="NSMutableArray" id="TSO-Xn-dGY"/>
+                        <outletCollection property="charArray" destination="I8j-9Q-9Gv" collectionClass="NSMutableArray" id="rPB-9V-70K"/>
+                        <outletCollection property="charArray" destination="abB-YD-4QV" collectionClass="NSMutableArray" id="F80-5g-NPQ"/>
+                        <outletCollection property="charArray" destination="M9q-aB-dwU" collectionClass="NSMutableArray" id="3oD-Q4-TDO"/>
+                        <outletCollection property="charArray" destination="Wp9-DZ-1aY" collectionClass="NSMutableArray" id="WkY-hE-pXj"/>
+                        <outletCollection property="charArray" destination="1pz-bv-r8f" collectionClass="NSMutableArray" id="5UE-cX-C2G"/>
+                        <outletCollection property="charArray" destination="9ZE-7H-bt7" collectionClass="NSMutableArray" id="LfE-Xg-Cn2"/>
+                        <outletCollection property="charArray" destination="OQc-ii-rwD" collectionClass="NSMutableArray" id="yBZ-gw-tnX"/>
+                        <outletCollection property="charArray" destination="HhX-pP-bxo" collectionClass="NSMutableArray" id="Bma-dS-pNO"/>
+                        <outletCollection property="charArray" destination="ii1-9E-y1E" collectionClass="NSMutableArray" id="vha-9f-vd5"/>
+                        <outletCollection property="charArray" destination="PW0-hU-rnK" collectionClass="NSMutableArray" id="ABs-7o-iwi"/>
+                        <outletCollection property="charArray" destination="CYc-Pm-MMk" collectionClass="NSMutableArray" id="x7m-yy-CYr"/>
+                        <outletCollection property="charArray" destination="gHH-ED-aMH" collectionClass="NSMutableArray" id="sYS-dy-SRw"/>
+                        <outletCollection property="charArray" destination="OSI-sw-z7n" collectionClass="NSMutableArray" id="PQn-xF-J4G"/>
+                        <outletCollection property="charArray" destination="Psc-ZO-F3Q" collectionClass="NSMutableArray" id="0Ya-Ps-gIX"/>
+                        <outletCollection property="charArray" destination="rwq-o4-Bmo" collectionClass="NSMutableArray" id="Ugw-7E-u9y"/>
+                        <outletCollection property="charArray" destination="L7P-ww-edC" collectionClass="NSMutableArray" id="fEa-IZ-L6o"/>
+                        <outletCollection property="charArray" destination="KEx-hR-ZYf" collectionClass="NSMutableArray" id="h7a-sj-aQW"/>
+                        <outletCollection property="charArray" destination="55J-EM-ZRw" collectionClass="NSMutableArray" id="RwV-S5-mVt"/>
+                        <outletCollection property="charArray" destination="smH-pr-wVf" collectionClass="NSMutableArray" id="9zC-QG-gNE"/>
+                        <outletCollection property="charArray" destination="GrI-rd-S2P" collectionClass="NSMutableArray" id="Eoo-py-j8J"/>
+                        <outletCollection property="charArray" destination="Or9-ET-JIZ" collectionClass="NSMutableArray" id="OLo-hC-k8a"/>
+                        <outletCollection property="charArray" destination="7n2-SC-1fl" collectionClass="NSMutableArray" id="mgI-Cv-NII"/>
+                        <outletCollection property="charArray" destination="ouO-c9-9YR" collectionClass="NSMutableArray" id="gk3-AG-xmk"/>
+                        <outletCollection property="charArray" destination="Buc-at-VR5" collectionClass="NSMutableArray" id="oBj-Vt-hc2"/>
+                        <outletCollection property="charArray" destination="90g-aL-1GF" collectionClass="NSMutableArray" id="gWM-4i-VCs"/>
+                        <segue destination="vwt-oc-eel" kind="show" identifier="goDetail" id="0In-AA-1wg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075" y="796"/>
+        </scene>
+        <!--VocabularyTVC-->
+        <scene sceneID="r0O-el-jgm">
+            <objects>
+                <tableViewController id="vwt-oc-eel" customClass="VocabularyTVC" customModule="EnglishPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UUZ-uT-bbD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="115" id="Bq2-5Y-mgw" customClass="VocabularyCell" customModule="EnglishPlus" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="115"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bq2-5Y-mgw" id="Ias-X7-Eef" customClass="VocabularyCell" customModule="EnglishPlus" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="114.66666666666667"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ggybel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okg-SG-JGT">
+                                            <rect key="frame" x="20" y="3" width="374" height="41"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCb-Iy-mbz">
+                                            <rect key="frame" x="20" y="46" width="374" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label151165611115561651156 fadjo fewjoi wejfoijaweijiwf awtejoij joi taweoijio jwtieoj jtowaijtowaeijoi twajote984989849849849" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="400" translatesAutoresizingMaskIntoConstraints="NO" id="867-p8-6Qb">
+                                            <rect key="frame" x="20" y="61" width="374" height="62"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="meanLabel" destination="867-p8-6Qb" id="ci5-2q-svY"/>
+                                    <outlet property="subTitleLabel" destination="CCb-Iy-mbz" id="l2o-vU-PZA"/>
+                                    <outlet property="titleLabel" destination="Okg-SG-JGT" id="KMB-mT-imh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vwt-oc-eel" id="gWK-Q1-Azg"/>
+                            <outlet property="delegate" destination="vwt-oc-eel" id="a9S-mv-9VJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3a-XA-hJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1962" y="796"/>
+        </scene>
+        <!--Vocabulary-->
+        <scene sceneID="vAe-fA-Zgi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4vJ-57-uVZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Vocabulary" image="PrioritizeDownloadApplicationShortcutItemIcon" id="o54-yV-S6b"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ewp-NH-pgI">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pUZ-di-cgS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cT0-8n-Icr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="795"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="7vU-o9-JUS">
+            <objects>
+                <viewController id="j88-5F-2b9" customClass="EnglishPlusVC" customModule="EnglishPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8H2-KU-B9u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8964135362694301" green="0.8964135362694301" blue="0.8964135362694301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="en7-AZ-0fm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="News" id="euh-dx-ny6"/>
+                    <connections>
+                        <segue destination="5xm-fM-hHc" kind="show" identifier="readNews" id="13Q-mM-4d7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jye-e5-5el" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073.913043478261" y="-144.29347826086956"/>
+        </scene>
+        <!--Read MoreVC-->
+        <scene sceneID="wKE-NG-MLd">
+            <objects>
+                <viewController id="5xm-fM-hHc" customClass="ReadMoreVC" customModule="EnglishPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HN0-A2-fmU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDQ-6j-ovy">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Fto-bj-6WJ">
+                                <rect key="frame" x="197" y="358" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gDQ-6j-ovy" firstAttribute="top" secondItem="5EO-uv-F7p" secondAttribute="top" id="OaI-I7-bKa"/>
+                            <constraint firstItem="gDQ-6j-ovy" firstAttribute="bottom" secondItem="5EO-uv-F7p" secondAttribute="bottom" id="Xrk-m3-9k3"/>
+                            <constraint firstItem="gDQ-6j-ovy" firstAttribute="leading" secondItem="5EO-uv-F7p" secondAttribute="leading" id="bYD-Hv-Zuy"/>
+                            <constraint firstItem="gDQ-6j-ovy" firstAttribute="trailing" secondItem="5EO-uv-F7p" secondAttribute="trailing" id="pGh-RS-X2K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5EO-uv-F7p"/>
+                    </view>
+                    <connections>
+                        <outlet property="myActivityIndicator" destination="Fto-bj-6WJ" id="sJr-FJ-u9t"/>
+                        <outlet property="myWebView" destination="gDQ-6j-ovy" id="LCO-ia-gMX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TqN-Ba-BvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1882.608695652174" y="-144.29347826086956"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="W9J-zC-5RJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gs2-9l-suw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="PUActivityOrderPrints" id="wRR-Mv-zGs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hu2-2y-dza">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j88-5F-2b9" kind="relationship" relationship="rootViewController" id="P9r-X1-8eo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BzM-6b-adn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="-144"/>
+        </scene>
+        <!--YOLO-->
+        <scene sceneID="i1X-aN-1MR">
+            <objects>
+                <viewController id="B2I-mJ-HNC" customClass="ViewController" customModule="EnglishPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FvG-fn-eu3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNr-9w-38w" userLabel="Video Preview">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyu-Kq-UPU" userLabel="Results">
+                                <rect key="frame" x="0.0" y="653" width="414" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elapsed time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZ5-59-d82">
+                                        <rect key="frame" x="20" y="10" width="374" height="14"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DZ5-59-d82" secondAttribute="trailing" constant="20" id="JZZ-uL-Kbb"/>
+                                    <constraint firstAttribute="bottom" secondItem="DZ5-59-d82" secondAttribute="bottom" constant="10" id="aGD-L8-OZ1"/>
+                                    <constraint firstItem="DZ5-59-d82" firstAttribute="top" secondItem="Cyu-Kq-UPU" secondAttribute="top" constant="10" id="dHt-A9-aBp"/>
+                                    <constraint firstItem="DZ5-59-d82" firstAttribute="leading" secondItem="Cyu-Kq-UPU" secondAttribute="leading" constant="20" id="pI4-7N-bhq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cyu-Kq-UPU" firstAttribute="leading" secondItem="fuD-Nw-e6p" secondAttribute="leading" id="6ga-Or-egO"/>
+                            <constraint firstItem="KNr-9w-38w" firstAttribute="leading" secondItem="fuD-Nw-e6p" secondAttribute="leading" id="8J5-Yn-hF6"/>
+                            <constraint firstItem="KNr-9w-38w" firstAttribute="top" secondItem="FvG-fn-eu3" secondAttribute="top" id="Ch7-5z-LHm"/>
+                            <constraint firstItem="fuD-Nw-e6p" firstAttribute="trailing" secondItem="KNr-9w-38w" secondAttribute="trailing" id="Eqv-tk-6M4"/>
+                            <constraint firstItem="fuD-Nw-e6p" firstAttribute="bottom" secondItem="Cyu-Kq-UPU" secondAttribute="bottom" id="dbT-dw-7L4"/>
+                            <constraint firstAttribute="bottom" secondItem="KNr-9w-38w" secondAttribute="bottom" id="hbE-hF-EdO"/>
+                            <constraint firstItem="fuD-Nw-e6p" firstAttribute="trailing" secondItem="Cyu-Kq-UPU" secondAttribute="trailing" id="myr-dS-rt3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fuD-Nw-e6p"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="YOLO" id="jbr-l8-elJ"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="DZ5-59-d82" id="1pp-O7-RvY"/>
+                        <outlet property="videoPreview" destination="KNr-9w-38w" id="NV1-qv-bVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6L5-j2-oOf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075.3623188405797" y="1598.6413043478262"/>
+        </scene>
+        <!--YOLO-->
+        <scene sceneID="Ebp-fi-tqW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tKe-XC-Cqw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="YOLO" image="ControlCenterGlyphCamera" id="4i4-5B-JE9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Edo-pg-nHe">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B2I-mJ-HNC" kind="relationship" relationship="rootViewController" id="DYI-ro-TEc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Cr-n9-eRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="1599"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8RG-v8-8Lf">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ip7-c5-C0Z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Os-ty-WQ0">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Gs2-9l-suw" kind="relationship" relationship="viewControllers" id="dSV-6U-y3e"/>
+                        <segue destination="4vJ-57-uVZ" kind="relationship" relationship="viewControllers" id="PdH-D6-Ve6"/>
+                        <segue destination="tKe-XC-Cqw" kind="relationship" relationship="viewControllers" id="ocS-Mq-cIl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YCh-5D-cfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1087" y="796"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ControlCenterGlyphCamera" width="31" height="23"/>
+        <image name="PUActivityOrderPrints" width="43" height="43"/>
+        <image name="PrioritizeDownloadApplicationShortcutItemIcon" width="35" height="35"/>
+    </resources>
+</document>
