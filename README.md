@@ -1,4 +1,5 @@
 # English-plus-ios-app
+英語學習APP
 
 <img src = "https://github.com/MindBreaker3310/English-plus-ios-app/blob/main/demo.gif" width = "auto" height = "600px">
 
@@ -11,7 +12,7 @@
 ## 💪收穫
 
 1. 了解Swift語法、頁面切換、串接API等基礎
-2. 了解AVFoundation操作應用
+2. 了解AVFoundation操作，讓APP發出聲音!
 3. 使用深度學習模型讓APP更有趣
 
 ## 👀參考文獻
