@@ -1,8 +1,6 @@
 # English-plus-ios-app
-English-plus-ios-app
 
-
-<img src = "https://github.com/MindBreaker3310/English-plus-ios-app/blob/main/demo.gif">
+<img src = "https://github.com/MindBreaker3310/English-plus-ios-app/blob/main/demo.gif" width = "auto" height = "600px">
 
 ## 🚩技術
 
